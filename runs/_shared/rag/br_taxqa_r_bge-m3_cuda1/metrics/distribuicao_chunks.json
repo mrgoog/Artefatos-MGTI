@@ -1,0 +1,18 @@
+{
+  "run": "phase2_local_full_715",
+  "c_min": 0.7,
+  "n": 715,
+  "D_chunks": {
+    "arquivo": "runs/_shared/rag/br_taxqa_r_bge-m3_cuda1/denso/chunks.parquet",
+    "n_chunks": 66865,
+    "limite_declarado": 512,
+    "palavras_media": 443.5966649218575,
+    "palavras_mediana": 481.0,
+    "palavras_p95": 511.0,
+    "palavras_p99": 582.0,
+    "palavras_max": 25312,
+    "caracteres_max": 165438,
+    "chunks_acima_do_limite": 1093,
+    "pct_acima_do_limite": 1.6346369550587003
+  }
+}

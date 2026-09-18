@@ -1,0 +1,33 @@
+{
+  "b_bootstrap": 10000,
+  "composicao_servido": {
+    "acordao_carf": 0.2857,
+    "norma": 0.7143
+  },
+  "degrau": "R3",
+  "frac_zero": 0.45323741007194246,
+  "hit_passagem": 0.5467625899280576,
+  "ic_frac_zero": [
+    0.4118705035971223,
+    0.49460431654676257
+  ],
+  "ic_hit_passagem": [
+    0.5053956834532374,
+    0.5881294964028777
+  ],
+  "ic_recall_arquivo": [
+    0.5386586471347877,
+    0.603523207141938
+  ],
+  "ic_recall_passagem": [
+    0.31064987589080234,
+    0.3754275439665958
+  ],
+  "n_chunks_medio": 7.0,
+  "n_dispositivos": 1742,
+  "n_itens": 556,
+  "palavras_medias": 3487.210431654676,
+  "recall_arquivo": 0.570773241322568,
+  "recall_passagem": 0.34256387578672476,
+  "teto_oracular": 0.9615384615384616
+}

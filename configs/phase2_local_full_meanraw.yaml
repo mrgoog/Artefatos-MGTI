@@ -1,0 +1,89 @@
+# Instanciação do PIPELINE MINIMALISTA (decision.method = mean_raw) sobre os 715.
+#
+# Idêntico a phase2_local_full.yaml EXCETO:
+#   - experiment_id: run paralela (não sobrescreve os artefatos weighted_calibrated)
+#   - decision.method: mean_raw (vencedor = argmax confiança crua; η = 1 − média das cruas)
+#   - embedder_device: cpu (os agentes são PULADOS por cache; o embedder fica ocioso — CPU
+#     evita contenção de GPU com o llama-swap)
+#
+# Custo: ZERO em dólares. Reusa os caches de agentes (Nível 1) e do juiz (Nível 2) do run
+# phase2_local_full_715 — copiados para o dir desta run. Só o Nível 3 (pesos ignorados,
+# calibração ignorada, seleção e τ) é recomputado. Materializa o artefato minimalista como
+# uma saída REAL do sistema (instanciação DSR), não um recompute post-hoc.
+#
+# Execução (após copiar agent_responses/ e judge_labels/ do run original):
+#   uv run python -m ensemble_llm.orquestracao.execucao --config configs/phase2_local_full_meanraw.yaml
+
+experiment_id: phase2_local_full_715_meanraw
+phase: phase2_local_full
+sample_size: null
+parallel_agents: false
+
+dataset:
+  dataset_id: brtaxq_2024_v1_1
+  format: brtaxqa_compatible
+  root_dir: data/brtaxq
+  questions_file: questions_QA_2024_v1.1.json
+  corpus_files:
+    - referred_legal_documents_QA_2024_v1.1.json
+    - acordaos_CARF_2023.json
+
+agents:
+  - agent_id: qwen35_9b
+    backend: llama-swap
+    model: qwen3.5-9b
+    temperature: 0.0
+    max_tokens: 1024
+    seed: 42
+    host: http://localhost:8080
+
+  - agent_id: granite41_8b
+    backend: llama-swap
+    model: granite4.1-8b
+    temperature: 0.0
+    max_tokens: 1024
+    seed: 42
+    host: http://localhost:8080
+
+  - agent_id: gemma4_e4b
+    backend: llama-swap
+    model: gemma4-e4b
+    temperature: 0.0
+    max_tokens: 1024
+    seed: 42
+    host: http://localhost:8080
+
+judge:
+  judge_id: judge_main
+  backend: openrouter
+  model: openai/gpt-5.4-mini
+  temperature: 0.0
+  max_tokens: 1024
+  seed: 42
+
+retrieval:
+  embedder_model: BAAI/bge-m3
+  embedder_device: cpu
+  embedder_batch_size: 8
+  persisted_index_dir: runs/_shared/rag/br_taxqa_r_bge-m3_cuda1
+  chunk_max_tokens: 512
+  chunk_overlap_tokens: 64
+  dense_top_k: 5
+  bm25_top_k: 5
+  merge_strategy: union_dedup
+
+partition:
+  n_splits: 10
+  n_val_folds: 2
+  stratify_by: has_doc_ref
+
+decision:
+  c_min_grid: [0.5, 0.7, 0.8, 0.9]
+  tiebreak_strategy: highest_weight
+  method: mean_raw
+
+bootstrap:
+  n_resamples: 10000
+  confidence_level: 0.95
+  method: BCa
+  seed: 42

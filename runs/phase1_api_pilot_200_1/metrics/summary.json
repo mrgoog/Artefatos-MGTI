@@ -1,0 +1,107 @@
+{
+  "risk_selective": {
+    "point": 0.6862745098039216,
+    "ci_lo": 0.6092040050010531,
+    "ci_hi": 0.7567567567567568,
+    "confidence_level": 0.95,
+    "method": "BCa",
+    "n_resamples": 10000,
+    "n_dropped": 0
+  },
+  "coverage": {
+    "point": 0.765,
+    "ci_lo": 0.7,
+    "ci_hi": 0.815,
+    "confidence_level": 0.95,
+    "method": "BCa",
+    "n_resamples": 10000,
+    "n_dropped": 0
+  },
+  "ece_raw": {
+    "claude-haiku-4.5": 0.48560000000000003,
+    "gemini-3.1-flash-lite": 0.627,
+    "gpt-5.4-nano": 0.4096
+  },
+  "ece_calibrated": {
+    "claude-haiku-4.5": 0.05524574709108833,
+    "gemini-3.1-flash-lite": 0.02472296751016277,
+    "gpt-5.4-nano": 0.12125075329260109
+  },
+  "diversity_matrix": {
+    "claude-haiku-4.5": {
+      "claude-haiku-4.5": 1.0,
+      "gemini-3.1-flash-lite": 0.875,
+      "gpt-5.4-nano": 0.8431372549019608
+    },
+    "gemini-3.1-flash-lite": {
+      "claude-haiku-4.5": 0.8986486486486487,
+      "gemini-3.1-flash-lite": 1.0,
+      "gpt-5.4-nano": 0.8562091503267973
+    },
+    "gpt-5.4-nano": {
+      "claude-haiku-4.5": 0.8716216216216216,
+      "gemini-3.1-flash-lite": 0.8618421052631579,
+      "gpt-5.4-nano": 1.0
+    }
+  },
+  "stability": {
+    "cmin=0.7": {
+      "weights": {
+        "claude-haiku-4.5": {
+          "mean": 0.3546111840229488,
+          "std": 0.009235156905745485,
+          "cv": 0.026043050309287,
+          "n_folds": 5
+        },
+        "gemini-3.1-flash-lite": {
+          "mean": 0.3570094974016543,
+          "std": 0.017263498901981283,
+          "cv": 0.048355853352996234,
+          "n_folds": 5
+        },
+        "gpt-5.4-nano": {
+          "mean": 0.288379318575397,
+          "std": 0.018505379827442252,
+          "cv": 0.06417027378682846,
+          "n_folds": 5
+        }
+      },
+      "tau_star": {
+        "mean": 0.901517069169589,
+        "std": 0.01302779500291371,
+        "cv": 0.014450968759708513,
+        "n_folds": 5,
+        "prop_constraint_satisfied": 1.0
+      }
+    },
+    "cmin=0.9": {
+      "weights": {
+        "claude-haiku-4.5": {
+          "mean": 0.3546111840229488,
+          "std": 0.009235156905745485,
+          "cv": 0.026043050309287,
+          "n_folds": 5
+        },
+        "gemini-3.1-flash-lite": {
+          "mean": 0.3570094974016543,
+          "std": 0.017263498901981283,
+          "cv": 0.048355853352996234,
+          "n_folds": 5
+        },
+        "gpt-5.4-nano": {
+          "mean": 0.288379318575397,
+          "std": 0.018505379827442252,
+          "cv": 0.06417027378682846,
+          "n_folds": 5
+        }
+      },
+      "tau_star": {
+        "mean": 0.9544794144316736,
+        "std": 0.018790790328008504,
+        "cv": 0.019686951906864453,
+        "n_folds": 5,
+        "prop_constraint_satisfied": 1.0
+      }
+    }
+  }
+}
