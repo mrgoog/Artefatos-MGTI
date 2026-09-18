@@ -1,8 +1,8 @@
 # Artefatos-MGTI
 
-## UNIVERSIDADE CATÓLICA DE BRASILIA
+## UNIVERSIDADE CATÓLICA DE BRASÍLIA
 
-## MESTRADO EM GESTÃO, TECNOLOGIA DA INFORMAÇÃO E INOVAÇÃO
+## MESTRADO EM GESTÃO, TECNOLOGIA E INOVAÇÃO
 
 ### Racionalidade limitada e governança seletiva em sistemas baseados em LLMs:
 
