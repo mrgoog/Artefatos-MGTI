@@ -1,0 +1,71 @@
+{
+  "adequacao_media": 0.275,
+  "agentes": [
+    "claude-haiku-4.5",
+    "gemini-3.1-flash-lite",
+    "gpt-5.4-nano"
+  ],
+  "b_bootstrap": 10000,
+  "degrau": "R3",
+  "ic_adequacao_media": [
+    0.22833333333333333,
+    0.32333333333333336
+  ],
+  "ic_taxa_evasiva": [
+    0.02333333333333333,
+    0.05833333333333333
+  ],
+  "ic_taxa_recusa": [
+    0.085,
+    0.15
+  ],
+  "n_chunks_medio": 7.0,
+  "n_com_dispositivo": 151,
+  "n_has_doc_ref": 168,
+  "n_itens": 200,
+  "n_respostas": 600,
+  "palavras_medias": 3583.87,
+  "por_agente": {
+    "claude-haiku-4.5": {
+      "adequacao": 0.28,
+      "n_adequadas": 56,
+      "n_evasivas": 12,
+      "n_falhas_parse": 0,
+      "n_recusas": 29
+    },
+    "gemini-3.1-flash-lite": {
+      "adequacao": 0.25,
+      "n_adequadas": 50,
+      "n_evasivas": 7,
+      "n_falhas_parse": 0,
+      "n_recusas": 26
+    },
+    "gpt-5.4-nano": {
+      "adequacao": 0.295,
+      "n_adequadas": 59,
+      "n_evasivas": 5,
+      "n_falhas_parse": 0,
+      "n_recusas": 15
+    }
+  },
+  "suficiencia": {
+    "frac_insuficiente": 0.08,
+    "frac_suficiente": 0.345,
+    "ic_frac_insuficiente": [
+      0.045,
+      0.115
+    ],
+    "ic_frac_suficiente": [
+      0.28,
+      0.41
+    ],
+    "n_falha_parse": 0,
+    "n_insuficiente": 16,
+    "n_parcial": 115,
+    "n_suficiente": 69
+  },
+  "taxa_evasiva": 0.039999999999999994,
+  "taxa_falha_parse": 0.0,
+  "taxa_recusa": 0.11666666666666665,
+  "variante": "P0"
+}

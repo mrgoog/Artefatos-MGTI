@@ -1,0 +1,213 @@
+{
+  "run": "phase2_local_full_715",
+  "config_path": "configs/phase2_local_full.yaml",
+  "primary_c_min": 0.7,
+  "bootstrap": {
+    "n_resamples": 10000,
+    "confidence_level": 0.95,
+    "method": "BCa",
+    "seed": 42
+  },
+  "progression": {
+    "paired_n": 715,
+    "stratify_col": "has_doc_ref",
+    "deltas": {
+      "B1→B2": {
+        "point": 0.01818181818181818,
+        "ci_lo": 0.002797202797202797,
+        "ci_hi": 0.033566433566433566,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0,
+        "includes_zero": false
+      },
+      "B2→B3": {
+        "point": -0.006993006993006993,
+        "ci_lo": -0.027972027972027972,
+        "ci_hi": 0.011188811188811189,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0,
+        "includes_zero": true
+      },
+      "B3→Full": {
+        "point": -0.015384615384615385,
+        "ci_lo": -0.027972027972027972,
+        "ci_hi": -0.009790209790209791,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0,
+        "includes_zero": false
+      },
+      "B1→Full": {
+        "point": -0.004195804195804196,
+        "ci_lo": -0.027972027972027972,
+        "ci_hi": 0.018160403406605595,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0,
+        "includes_zero": true
+      }
+    },
+    "absolutes": {
+      "B1": {
+        "point": 0.24755244755244754,
+        "ci_lo": 0.2153846153846154,
+        "ci_hi": 0.2783216783216783,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "B2": {
+        "point": 0.26573426573426573,
+        "ci_lo": 0.23216783216783216,
+        "ci_hi": 0.29790209790209793,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "B3": {
+        "point": 0.25874125874125875,
+        "ci_lo": 0.22517482517482518,
+        "ci_hi": 0.2895104895104895,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "Full": {
+        "point": 0.24335664335664337,
+        "ci_lo": 0.2111888111888112,
+        "ci_hi": 0.27412587412587414,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      }
+    }
+  },
+  "cmin_metrics": {
+    "full_cmin=0.5": {
+      "coverage": {
+        "point": 0.6937062937062937,
+        "ci_lo": 0.6587412587412588,
+        "ci_hi": 0.7244755244755244,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "risk_selective": {
+        "point": 0.6814516129032258,
+        "ci_lo": 0.6394979566738009,
+        "ci_hi": 0.7219494279631731,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "precision_abstention": {
+        "point": 0.8767123287671232,
+        "ci_lo": 0.8285714285714286,
+        "ci_hi": 0.9158878504672897,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      }
+    },
+    "full_cmin=0.7": {
+      "coverage": {
+        "point": 0.8223776223776224,
+        "ci_lo": 0.7916083916083916,
+        "ci_hi": 0.8475524475524475,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "risk_selective": {
+        "point": 0.7040816326530612,
+        "ci_lo": 0.665521371621741,
+        "ci_hi": 0.739064007494111,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "precision_abstention": {
+        "point": 0.9133858267716536,
+        "ci_lo": 0.8524323838484514,
+        "ci_hi": 0.9534883720930233,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      }
+    },
+    "full_cmin=0.8": {
+      "coverage": {
+        "point": 0.8517482517482518,
+        "ci_lo": 0.8223776223776224,
+        "ci_hi": 0.8741258741258742,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "risk_selective": {
+        "point": 0.7077175697865353,
+        "ci_lo": 0.6699719026679907,
+        "ci_hi": 0.7424267773646591,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "precision_abstention": {
+        "point": 0.9339622641509434,
+        "ci_lo": 0.872426225471427,
+        "ci_hi": 0.9714285714285714,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      }
+    },
+    "full_cmin=0.9": {
+      "coverage": {
+        "point": 0.951048951048951,
+        "ci_lo": 0.9314685314685315,
+        "ci_hi": 0.9636363636363636,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "risk_selective": {
+        "point": 0.7308823529411764,
+        "ci_lo": 0.6960340196310125,
+        "ci_hi": 0.7626112759643917,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      },
+      "precision_abstention": {
+        "point": 0.9428571428571428,
+        "ci_lo": 0.8,
+        "ci_hi": 1.0,
+        "confidence_level": 0.95,
+        "method": "BCa",
+        "n_resamples": 10000,
+        "n_dropped": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# RAG-2
+debug-temp/
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+runs/_shared/
+data/reparo/brutos/

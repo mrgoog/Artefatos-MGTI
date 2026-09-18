@@ -1,0 +1,47 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Bytecode Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caches de teste / lint / tipo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Empacotamento
+*.egg-info/
+build/
+dist/
+
+# Secrets
+.env
+
+# Cache do HuggingFace
+.cache/
+~/.cache/huggingface/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# BrTaxQA-R raw
+data/brtaxq/
+
+# Índices RAG — corpos versionáveis apenas fora do git (bm25.pkl 359 MB,
+# vetores.npz 243 MB, chunks.parquet 87 MB). Os metrics/ de cada índice ficam
+# versionados; a distribuição dos chunks é preservada em forma derivada por
+# scripts/recomputacao_fase0.py --camadas D.
+runs/_shared/rag/*/denso/
+runs/_shared/rag/*/bm25/

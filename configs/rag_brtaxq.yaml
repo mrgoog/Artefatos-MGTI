@@ -1,0 +1,19 @@
+dataset:
+  dataset_id: brtaxq_2024_v1_1
+  format: brtaxqa_compatible
+  root_dir: data/brtaxq
+  questions_file: questions_QA_2024_v1.1.json
+  corpus_files:
+    - referred_legal_documents_QA_2024_v1.1.json
+    - acordaos_CARF_2023.json
+
+retrieval:
+  embedder_model: BAAI/bge-m3
+  embedder_device: cuda:0
+  embedder_batch_size: 8
+  persisted_index_dir: runs/_shared/rag/br_taxqa_r_bge-m3_cuda1
+  chunk_max_tokens: 512
+  chunk_overlap_tokens: 64
+  dense_top_k: 10
+  bm25_top_k: 10
+  merge_strategy: union_dedup

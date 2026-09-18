@@ -1,0 +1,8 @@
+{
+  "tau_star": 0.4,
+  "c_min": 0.8,
+  "coverage_emp_val": 0.8181818181818182,
+  "risk_sel_emp_val": 0.7435897435897436,
+  "val_size": 143,
+  "constraint_satisfied": true
+}

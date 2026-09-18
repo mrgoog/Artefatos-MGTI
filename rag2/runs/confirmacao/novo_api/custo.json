@@ -1,0 +1,56 @@
+{
+  "n_itens": 200,
+  "executado_em": "2026-09-14T20:43:27.026460+00:00",
+  "etapas": {
+    "contexto": {
+      "recuperados": 0,
+      "segundos": 0.0
+    },
+    "agente_claude-haiku-4.5": {
+      "geradas": 200,
+      "segundos": 1026.4,
+      "retries": 0,
+      "falhas_parse": 0,
+      "custo_usd": 1.9859
+    },
+    "agente_gemini-3.1-flash-lite": {
+      "geradas": 200,
+      "segundos": 476.3,
+      "retries": 0,
+      "falhas_parse": 0,
+      "custo_usd": 0.41
+    },
+    "agente_gpt-5.4-nano": {
+      "geradas": 200,
+      "segundos": 747.7,
+      "retries": 0,
+      "falhas_parse": 0,
+      "custo_usd": 0.3212
+    },
+    "juiz": {
+      "segundos": 1106.7,
+      "chamadas": 594,
+      "custo_usd": 0.8611
+    },
+    "auditor": {
+      "segundos": 144.3,
+      "auditadas": 70,
+      "custo_usd": 0.2965
+    },
+    "suficiencia": {
+      "segundos": 0.0,
+      "julgados": 0,
+      "vazios": 0,
+      "custo_usd": 0.0
+    }
+  },
+  "custo_usd_total": 3.8747,
+  "palavras_medias": 3583.87,
+  "n_chunks_medio": 7.0,
+  "ambiente": {
+    "experimento": "api_agents_R3",
+    "agentes": "phase1_api_pilot_200_1",
+    "juiz": "openai/gpt-5.4-mini"
+  },
+  "nota": "custo_usd dos agentes acrescentado em 2026-09-16 (bug: as etapas de agente não recebiam custo_usd; total anterior 1,1576 cobria só a avaliação)"
+}

@@ -1,0 +1,53 @@
+{
+  "n_itens": 200,
+  "executado_em": "2026-09-14T14:55:24.266071+00:00",
+  "etapas": {
+    "contexto": {
+      "recuperados": 200,
+      "segundos": 136.0
+    },
+    "agente_qwen35_9b": {
+      "geradas": 200,
+      "segundos": 869.0,
+      "retries": 0,
+      "falhas_parse": 0
+    },
+    "agente_granite41_8b": {
+      "geradas": 200,
+      "segundos": 1401.7,
+      "retries": 19,
+      "falhas_parse": 5
+    },
+    "agente_gemma4_e4b": {
+      "geradas": 200,
+      "segundos": 678.4,
+      "retries": 4,
+      "falhas_parse": 1
+    },
+    "juiz": {
+      "segundos": 1239.6,
+      "chamadas": 582,
+      "custo_usd": 0.8503
+    },
+    "auditor": {
+      "segundos": 104.3,
+      "auditadas": 40,
+      "custo_usd": 0.2037
+    },
+    "suficiencia": {
+      "segundos": 535.4,
+      "julgados": 200,
+      "vazios": 0,
+      "custo_usd": 1.095
+    }
+  },
+  "custo_usd_total": 2.149,
+  "palavras_medias": 3583.87,
+  "n_chunks_medio": 7.0,
+  "ambiente": {
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 4070 Ti",
+    "llama_swap_host": "http://localhost:8080",
+    "indice": "runs/_shared/rag/rag2_reparado"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "adequacao_media": 0.2333333333333333,
+  "agentes": [
+    "qwen35_9b",
+    "granite41_8b",
+    "gemma4_e4b"
+  ],
+  "b_bootstrap": 10000,
+  "degrau": "R3",
+  "ic_adequacao_media": [
+    0.11666666666666665,
+    0.36666666666666664
+  ],
+  "ic_taxa_evasiva": [
+    0.0,
+    0.0
+  ],
+  "ic_taxa_recusa": [
+    0.0,
+    0.1
+  ],
+  "n_chunks_medio": 7.0,
+  "n_itens": 20,
+  "n_respostas": 60,
+  "palavras_medias": 3324.65,
+  "por_agente": {
+    "gemma4_e4b": {
+      "adequacao": 0.35,
+      "n_adequadas": 7,
+      "n_evasivas": 0,
+      "n_falhas_parse": 0,
+      "n_recusas": 1
+    },
+    "granite41_8b": {
+      "adequacao": 0.1,
+      "n_adequadas": 2,
+      "n_evasivas": 0,
+      "n_falhas_parse": 1,
+      "n_recusas": 0
+    },
+    "qwen35_9b": {
+      "adequacao": 0.25,
+      "n_adequadas": 5,
+      "n_evasivas": 0,
+      "n_falhas_parse": 0,
+      "n_recusas": 1
+    }
+  },
+  "taxa_evasiva": 0.0,
+  "taxa_falha_parse": 0.01666666666666683,
+  "taxa_recusa": 0.03333333333333333,
+  "variante": "P0"
+}
