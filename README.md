@@ -8,11 +8,11 @@
 
 ### Projeto e auditoria de um ensemble sob RAG compartilhado
 
-Autor:              André Luiz Castilhos Magoga
+#### Autor:              André Luiz Castilhos Magoga
 
-Orientador:     Dr. Rosalvo Ermes Streit
+#### Orientador:     Dr. Rosalvo Ermes Streit
 
-Coorientador: Dr. Eduardo Amadeu Dutra Moresi
+#### Coorientador: Dr. Eduardo Amadeu Dutra Moresi
 
 
 Este repositório acompanha a dissertação como um todo, agregando os artefatos computacionais da dissertação e avaliação empírica.
