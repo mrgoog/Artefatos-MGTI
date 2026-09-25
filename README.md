@@ -2,7 +2,7 @@
 
 ## UNIVERSIDADE CATÓLICA DE BRASÍLIA
 
-## MESTRADO EM GESTÃO, TECNOLOGIA E INOVAÇÃO
+## MESTRADO EM GOVERNANÇA, TECNOLOGIA E INOVAÇÃO
 
 ### Racionalidade limitada e governança seletiva em sistemas baseados em LLMs:
 
