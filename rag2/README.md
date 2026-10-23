@@ -37,8 +37,12 @@ Sem GPU e sem chamadas de modelo, a partir dos artefatos versionados:
 ```bash
 uv sync
 uv run rag2 numeros --saida /tmp/ledger.md && diff docs/numeros_canonicos_rag2.md /tmp/ledger.md
-uv run pytest -m "not gpu and not llm"
 ```
+
+Os testes sem GPU e sem modelo (`uv run pytest -m "not gpu and not llm"`) exigem também os dados brutos
+(`../data/brtaxq`) e o índice de produção (`../runs/_shared/rag/br_taxqa_r_bge-m3_cuda1`): parte deles lê
+as questões, as normas e os trechos do índice. Gere-os antes com `download_dataset.py` e `build_rag_index.py`,
+como indicado acima; sem eles, esses testes falham por arquivo ausente.
 
 Cadeia completa (GPU para embedder e reranker; llama-swap para os agentes locais e o reformulador de R5;
 OpenRouter para juiz, auditor e juiz de suficiência):

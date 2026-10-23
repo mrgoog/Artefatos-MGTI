@@ -38,7 +38,7 @@ runs/
   phase1_api_pilot_200_1/         piloto com agentes de API, N = 200 (Tabela 10; Apêndice B4.2)
   _shared/rag/br_taxqa_r_bge-m3_cuda1/metrics/  métricas do índice de produção (Tabela 8; distribuição dos trechos)
 tabelas/                 tabelas derivadas (Markdown + Parquet) usadas no Capítulo 6
-data/validacao_humana/   amostra sorteada e estado final das anotações (Seção 6.2.2, Tabela 3)
+data/validacao_humana/   amostra sorteada, estado final das anotações e resultados (Seção 6.2.2, Tabela 3)
 bibliografia/            corpus e saídas do mapeamento bibliométrico (Seção 2, Apêndice A4); inventário em bibliografia/README.md
 tests/                   testes das mensurações de decisão
 rag2/                    protótipo RAG-2 (somente Apêndice B)
@@ -51,7 +51,7 @@ Cada execução em `runs/` guarda respostas dos agentes (`agent_responses/`), r�
 
 | Artefato na dissertação | Script (`scripts/`) | Saída |
 |---|---|---|
-| Tabela 3 (verificação humana) | `sortear_amostra_validacao.py`, `anotar_validacao.py` (Streamlit), `analisar_validacao_humana.py` | `data/validacao_humana/` |
+| Tabela 3 (verificação humana) | `sortear_amostra_validacao.py`, `anotar_validacao.py` (Streamlit), `analisar_validacao_humana.py` | `data/validacao_humana/` (`resultados.md`) |
 | Tabela 4 e Figura 2 (suficiência do contexto) | `juiz_suficiencia_contexto.py`, `analise_suficiencia_decisao.py` | `runs/phase2_local_full_715/metrics/suficiencia_contexto.parquet` |
 | Tabela 5 e Seção 6.2.5 (pontos de operação e contrastes de decisão) | `mensuracoes_decisao_artigo2.py` | `tabelas/pontos_operacao_*`, `contraste_pontos_operacao_*`, `contrastes_decisao_*`, `metricas_decisao_cobertura_*`, `auditoria_decisao_itens_*` |
 | Tabela 6 (ECE) | pipeline (`ensemble_llm.orquestracao.execucao`) | `runs/phase2_local_full_715/metrics/summary.json` |
