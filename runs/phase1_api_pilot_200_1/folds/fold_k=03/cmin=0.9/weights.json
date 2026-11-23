@@ -1,0 +1,13 @@
+{
+  "weights": {
+    "claude-haiku-4.5": 0.37037037037037035,
+    "gemini-3.1-flash-lite": 0.345679012345679,
+    "gpt-5.4-nano": 0.2839506172839506
+  },
+  "alphas_raw": {
+    "claude-haiku-4.5": 0.25,
+    "gemini-3.1-flash-lite": 0.23333333333333334,
+    "gpt-5.4-nano": 0.19166666666666668
+  },
+  "fit_size": 120
+}

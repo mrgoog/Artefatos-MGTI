@@ -1,0 +1,32 @@
+{
+  "indice_id": "rag2_reparado",
+  "corpus_files": [
+    "acordaos_CARF_2023.json",
+    "referred_legal_documents_QA_2024_v1.1_reparado.json"
+  ],
+  "sha256_corpus": {
+    "acordaos_CARF_2023.json": "2fca2a7f0bc89c08f1eefb04ee4167a98c9fc170af25c1ac2468098c9eb079bd",
+    "referred_legal_documents_QA_2024_v1.1_reparado.json": "aa55ee56a4b42cbe4cae936b5e48ae5cc22d7a1acd3164a789db0c0ed27a7acd"
+  },
+  "sem_pseudo_docs": true,
+  "embedder_model": "BAAI/bge-m3",
+  "embedder_batch_size": 8,
+  "embedder_device": "cuda:1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "embedder_dtype": "float32",
+  "chunk_max_tokens": 512,
+  "chunk_overlap_tokens": 64,
+  "tokenizador": "tokenizador_espacos",
+  "documentos": {
+    "acordao_carf": 7204,
+    "norma": 478
+  },
+  "chunks": {
+    "acordao_carf": 60435,
+    "norma": 6692
+  },
+  "n_chunks": 67127,
+  "dim": 1024,
+  "construido_em": "2026-09-12T20:16:20+00:00",
+  "duracao_s": 2041.8
+}

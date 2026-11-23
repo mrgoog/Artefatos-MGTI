@@ -1,0 +1,85 @@
+label	replace by
+adversarial attacks	adversarial attack
+agency	
+agentes	agent
+ai	artificial intelligence
+ai agentes	ai agent
+aigc	ai-generated content
+algorithms	
+alignment	
+artificial general intelligence (agi)	artificial general intelligence
+artificial intelligence (ai)	artificial intelligence
+assessment	
+automation	
+autonomy	
+benchmark	
+benchmarking	
+bias	
+challenges	
+chatbots	chatbot
+cognition	
+conversational agentes	conversational agent
+conversational artificial intelligence	conversational ai
+creativity	
+cyber security	cybersecurity
+diffusion models	diffusion model
+digital twins	digital twin
+engagement	
+evaluation	
+explainable ai	explainable artificial intelligence
+explanation	
+fairness	
+federated learning (fl)	federated learning
+finance	
+foundation models	foundation model
+genai	generative artificial intelligence
+generative ai	generative artificial intelligence
+generative artificial intelligence (gai)	generative artificial intelligence
+generative artificial intelligence (genai)	generative artificial intelligence
+healthcare	
+intelligent agentes	intelligent agent
+internet of things (iot)	internet of things
+knowledge graphs	knowledge graph
+language	
+language models	language model
+large language model (llm)	large language model
+large language models	large language model
+large language models (llm)	large language model
+large language models (llms)	large language model
+llm	large language model
+llm agentes	llm agent
+llms	large language model
+machine learning (ml)	machine learning
+medical imaging	
+mental health	
+meta-learning	
+metaverse	
+mixed reality	
+multi-agent systems	multi-agent system
+natural language processing (nlp)	
+navigation	
+neural networks	neural network
+nlp	natural language processing
+ontology	
+optimization	
+personalization	
+privacy	
+rag	retrieval augmented generation
+reinforcement learning (rl)	reinforcement learning
+resource allocation	
+retrieval-augmented generation	retrieval augmented generation
+retrieval-augmented generation (rag)	retrieval augmented generation
+review	
+social media	
+survey	
+synthetic data	
+systematic literature review	
+systematic review	
+taxonomy	
+tourism	
+transformers	transformer
+transparency	
+trust	
+trustworthiness	
+uncertainty	
+virtual reality	

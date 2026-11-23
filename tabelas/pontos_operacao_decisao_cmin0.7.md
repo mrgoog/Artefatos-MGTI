@@ -1,0 +1,7 @@
+<!-- gerado por scripts/mensuracoes_decisao_artigo2.py; não editar à mão -->
+# Métricas complementares nos pontos materializados — C_min=0.7
+
+| run | variant | c_min | n | cobertura_nominal | cobertura_efetiva | risco_seletivo_convencional | risco_substantivo | precisao_abstencao_erro | recall_erros_abstencao | taxa_falsa_abstencao | precisao_abstencao_contexto_estrita | precisao_abstencao_contexto_ampla | precisao_nao_resposta_contexto_estrita | precisao_nao_resposta_contexto_ampla | abstencao_dado_contexto_insuficiente | abstencao_dado_contexto_parcial | abstencao_dado_contexto_suficiente | recusas_textuais_selecionadas | recusas_textuais_liberadas | utilidade_convencional | utilidade_erro_efetiva | utilidade_contexto_estrita | utilidade_contexto_ampla | penalizacao_contextual_estrita | penalizacao_contextual_ampla |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| phase2_local_full_715 | A0 | 0.7000 | 715.0000 | 0.8224 | 0.8182 | 0.7041 | 0.7026 | 0.9134 | 0.2189 | 0.0595 | 0.3307 | 1.0000 | 0.3231 | 1.0000 | 0.4719 | 0.1968 | 0.0000 | 11.0000 | 3.0000 | 0.2434 | 0.4098 | 0.3035 | 0.4252 | 0.0601 | 0.1818 |
+| phase2_local_full_715_meanraw | A5 | 0.7000 | 715.0000 | 0.7594 | 0.7580 | 0.6759 | 0.6753 | 0.9012 | 0.2969 | 0.0881 | 0.3547 | 0.9709 | 0.3526 | 0.9711 | 0.6854 | 0.2454 | 0.0258 | 10.0000 | 1.0000 | 0.2462 | 0.4643 | 0.3315 | 0.4811 | 0.0853 | 0.2350 |

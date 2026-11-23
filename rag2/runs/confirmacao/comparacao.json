@@ -1,0 +1,202 @@
+{
+  "n_itens": 200,
+  "n_has_doc_ref": 168,
+  "n_com_dispositivo": 151,
+  "atual": "phase2_local_full_715",
+  "novo": "P0/R3",
+  "b0": "qwen35_9b",
+  "b_bootstrap": 10000,
+  "metricas": [
+    {
+      "metrica": "recall_passagem",
+      "n": 151,
+      "atual": 0.21371018606117947,
+      "novo": 0.33083412172816146,
+      "delta": 0.11712393566698201,
+      "ic_lo": 0.0711601229895932,
+      "ic_hi": 0.16612346263008512
+    },
+    {
+      "metrica": "recall_arquivo",
+      "n": 151,
+      "atual": 0.4139545884578997,
+      "novo": 0.5651766004415011,
+      "delta": 0.15122201198360138,
+      "ic_lo": 0.09464660201829077,
+      "ic_hi": 0.20946921318196154
+    },
+    {
+      "metrica": "z_media",
+      "n": 200,
+      "atual": 0.22666666666666666,
+      "novo": 0.23,
+      "delta": 0.0033333333333333322,
+      "ic_lo": -0.034999999999999996,
+      "ic_hi": 0.04166666666666667
+    },
+    {
+      "metrica": "z_qwen35_9b",
+      "n": 200,
+      "atual": 0.24,
+      "novo": 0.23,
+      "delta": -0.01,
+      "ic_lo": -0.07,
+      "ic_hi": 0.05
+    },
+    {
+      "metrica": "z_granite41_8b",
+      "n": 200,
+      "atual": 0.205,
+      "novo": 0.23,
+      "delta": 0.025,
+      "ic_lo": -0.04,
+      "ic_hi": 0.09
+    },
+    {
+      "metrica": "z_gemma4_e4b",
+      "n": 200,
+      "atual": 0.235,
+      "novo": 0.23,
+      "delta": -0.005,
+      "ic_lo": -0.06512499999999889,
+      "ic_hi": 0.06
+    },
+    {
+      "metrica": "z_b0",
+      "n": 200,
+      "atual": 0.24,
+      "novo": 0.23,
+      "delta": -0.01,
+      "ic_lo": -0.07,
+      "ic_hi": 0.05
+    },
+    {
+      "metrica": "recusa",
+      "n": 200,
+      "atual": 0.06166666666666666,
+      "novo": 0.06666666666666667,
+      "delta": 0.004999999999999999,
+      "ic_lo": -0.015,
+      "ic_hi": 0.02666666666666667
+    },
+    {
+      "metrica": "evasiva",
+      "n": 200,
+      "atual": 0.013333333333333332,
+      "novo": 0.018333333333333333,
+      "delta": 0.005,
+      "ic_lo": -0.006666666666666667,
+      "ic_hi": 0.01833333333333333
+    },
+    {
+      "metrica": "falha_parse",
+      "n": 200,
+      "atual": 0.008333333333333333,
+      "novo": 0.01,
+      "delta": 0.0016666666666666668,
+      "ic_lo": -0.008333333333333333,
+      "ic_hi": 0.011666666666666667
+    },
+    {
+      "metrica": "suficiente",
+      "n": 200,
+      "atual": 0.25,
+      "novo": 0.345,
+      "delta": 0.095,
+      "ic_lo": 0.045,
+      "ic_hi": 0.145
+    },
+    {
+      "metrica": "insuficiente",
+      "n": 200,
+      "atual": 0.105,
+      "novo": 0.08,
+      "delta": -0.025,
+      "ic_lo": -0.07,
+      "ic_hi": 0.015
+    },
+    {
+      "metrica": "palavras",
+      "n": 200,
+      "atual": 3264.68,
+      "novo": 3583.87,
+      "delta": 319.19,
+      "ic_lo": 149.973875,
+      "ic_hi": 492.640125
+    },
+    {
+      "metrica": "n_chunks",
+      "n": 200,
+      "atual": 7.12,
+      "novo": 7.0,
+      "delta": -0.12,
+      "ic_lo": -0.41,
+      "ic_hi": 0.165
+    }
+  ],
+  "medias": {
+    "palavras_atual": 3264.68,
+    "palavras_novo": 3583.87,
+    "n_chunks_atual": 7.12,
+    "n_chunks_novo": 7.0
+  },
+  "custo": {
+    "atual": {
+      "agentes": {
+        "chamadas": 600,
+        "custo_usd": 0.0
+      },
+      "juiz": {
+        "chamadas": 595,
+        "custo_usd": 0.8854
+      },
+      "auditor": {
+        "chamadas": 37,
+        "custo_usd": 0.1771
+      },
+      "suficiencia": {
+        "chamadas": 200,
+        "custo_usd": 1.0442
+      },
+      "segundos": null,
+      "custo_usd_total": 2.1067
+    },
+    "novo": {
+      "agentes": {
+        "chamadas": 600,
+        "custo_usd": 0.0,
+        "retries": 23
+      },
+      "juiz": {
+        "chamadas": 582,
+        "custo_usd": 0.8503
+      },
+      "auditor": {
+        "chamadas": 40,
+        "custo_usd": 0.2037
+      },
+      "suficiencia": {
+        "chamadas": 200,
+        "custo_usd": 1.095
+      },
+      "segundos": {
+        "contexto": 136.0,
+        "agente_qwen35_9b": 869.0,
+        "agente_granite41_8b": 1401.7,
+        "agente_gemma4_e4b": 678.4,
+        "juiz": 1239.6,
+        "auditor": 104.3,
+        "suficiencia": 535.4
+      },
+      "custo_usd_total": 2.149
+    }
+  },
+  "revisao_b3": {
+    "delta_adequacao_media": 0.0033333333333333322,
+    "ic": [
+      -0.034999999999999996,
+      0.04166666666666667
+    ],
+    "significativamente_melhor": false
+  }
+}

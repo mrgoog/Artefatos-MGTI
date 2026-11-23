@@ -1,0 +1,71 @@
+{
+  "adequacao_media": 0.23,
+  "agentes": [
+    "qwen35_9b",
+    "granite41_8b",
+    "gemma4_e4b"
+  ],
+  "b_bootstrap": 10000,
+  "degrau": "R3",
+  "ic_adequacao_media": [
+    0.18833333333333335,
+    0.2733333333333333
+  ],
+  "ic_taxa_evasiva": [
+    0.008333333333333333,
+    0.03
+  ],
+  "ic_taxa_recusa": [
+    0.045,
+    0.09166666666666665
+  ],
+  "n_chunks_medio": 7.0,
+  "n_com_dispositivo": 151,
+  "n_has_doc_ref": 168,
+  "n_itens": 200,
+  "n_respostas": 600,
+  "palavras_medias": 3583.87,
+  "por_agente": {
+    "gemma4_e4b": {
+      "adequacao": 0.23,
+      "n_adequadas": 46,
+      "n_evasivas": 3,
+      "n_falhas_parse": 1,
+      "n_recusas": 15
+    },
+    "granite41_8b": {
+      "adequacao": 0.23,
+      "n_adequadas": 46,
+      "n_evasivas": 0,
+      "n_falhas_parse": 5,
+      "n_recusas": 2
+    },
+    "qwen35_9b": {
+      "adequacao": 0.23,
+      "n_adequadas": 46,
+      "n_evasivas": 8,
+      "n_falhas_parse": 0,
+      "n_recusas": 23
+    }
+  },
+  "suficiencia": {
+    "frac_insuficiente": 0.08,
+    "frac_suficiente": 0.345,
+    "ic_frac_insuficiente": [
+      0.045,
+      0.115
+    ],
+    "ic_frac_suficiente": [
+      0.28,
+      0.41
+    ],
+    "n_falha_parse": 0,
+    "n_insuficiente": 16,
+    "n_parcial": 115,
+    "n_suficiente": 69
+  },
+  "taxa_evasiva": 0.018333333333333333,
+  "taxa_falha_parse": 0.010000000000000009,
+  "taxa_recusa": 0.06666666666666667,
+  "variante": "P0"
+}
